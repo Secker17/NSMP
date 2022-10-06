@@ -1,0 +1,107 @@
+.body {
+    background-color: #333;
+}
+header
+{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .logo
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigator
+{
+    position: relative;
+}
+header .navigator .nav-i a
+{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigator .nav-i a:before
+{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigator .nav-i a:hover:before
+{
+    width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+body, html {
+  color: #333;
+  display: grid;
+  max-width: 100%;
+  place-items: center;
+}
+
+h2 {
+  margin: 0;
+  color: #5959FF;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-top: 5rem;
+}
+
+form{
+  width: 50%;
+}
+
+form label{
+  font-size: 1.2rem;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 0.5em;
+  border: none;
+  font-size: 1.2rem;
+}
+input[type="text"], input[type="email"], textarea {
+  margin: 0 0 1em;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+textarea {
+  height: 6em;
+}
+input[type="submit"], button {
+  background: #4570F3;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover, button:hover {
+  background: #6E65F4;
+}

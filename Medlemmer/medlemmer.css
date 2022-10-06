@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.cont
+{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(bakk.png);
+    background-position: center;
+    background-size: cover;
+}
+header
+{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px;
+    transition: 0.5s ease;
+}
+header .logo
+{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+header .navigator
+{
+    position: relative;
+}
+header .navigator .nav-i a
+{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+}
+header .navigator .nav-i a:before
+{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigator .nav-i a:hover:before
+{
+    width: 100%;
+
+}
+section
+{
+    padding: 100px 200px;
+
+}
+.hjem
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696e9;
+}
+.hjem:before
+{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.hjem .row .colum
+{
+    position: absolute;
+    top: 300px;
+    color: white;
+}
+.hjem .row .colum h1
+{
+    
+    font-size: 7em;
+    margin-left: 200px;
+    font-weight: 8000;
+}
+.hjem .row .colum p
+{
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-left: 200px;
+}
+
+@media (max-width: 1040px){
+
+    header{
+        padding: 12px 20px;
+    }
+    section{
+        padding: 100px 20px; 
+    }
+
+    .home .media-ikoner{
+        right: 15px; 
+    }
+
+    header .navigator {
+       display: none;
+    }
+    header .navigator.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(1, 1, 1, 0.5);
+     }
+
+    header .navigator .nav-i a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .navigator .nav-i a:before{
+        background: #222;
+        height: 5px;
+    }
+    header .navigator.active .nav-i{
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;  
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+
+    .menu-btn{
+        background: url(Bilder/menu.png)no-repeat;
+        background-size: 30px;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        transition: 0.3 ease;
+    }
+    .menu-btn.active{
+        z-index: 999;
+        background: url(Bilder/close.png)no-repeat;
+        background-size: 25px;
+        background-position: center;
+        transition: 0.3s ease;
+    }
+}
+.card
+{
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(Manhunt.jpg);
+    background-position: center;
+    background-size: cover;
+    right: 470px;
+    top: 250px;
+    transform: 0.5s;
+}
+.cardd
+{
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(Hjelpere.jpg);
+    background-position: center;
+    background-size: cover;
+    right: 100px;
+    top: 250px;
+    transform: 0.5s;
+}
+.carddd
+{
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(Bygging.jpg);
+    background-position: center;
+    background-size: cover;
+    right: 470px;
+    top: 600px;
+    transform: 0.5s;
+}
+.cardddd
+{
+    position: absolute;
+    width: 230px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-image: url(Spleef.jpg);
+    background-position: center;
+    background-size: cover;
+    right: 100px;
+    top: 600px;
+    transform: 0.5s;
+}
+.card:hover
+{
+    transform: translateY(-10px);
+}
+.cardd:hover
+{
+    transform: translateY(-10px);
+}
+.carddd:hover
+{
+    transform: translateY(-10px);
+}
+.cardddd:hover
+{
+    transform: translateY(-10px);
+}
