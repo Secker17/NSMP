@@ -94,7 +94,7 @@ section
 .hjem .row .colum
 {
     position: absolute;
-    top: 300px;
+    top: 340px;
     color: white;
 }
 .hjem .row .colum h1
@@ -103,12 +103,14 @@ section
     font-size: 7em;
     margin-left: 200px;
     font-weight: 8000;
+    display: flex;
 }
 .hjem .row .colum p
 {
     font-size: 1.1em;
     font-weight: 500;
     margin-left: 200px;
+    display: flex;
 }
 
 @media (max-width: 1040px){

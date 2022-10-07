@@ -247,8 +247,3 @@ section
         transition: 0.3s ease;
     }
 }
-
-h1 {
-    color: gold;
-    text-size-adjust: 10px;
-}
